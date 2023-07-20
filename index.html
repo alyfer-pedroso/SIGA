@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>SIGA - Interface de acesso dos alunos</title>
+
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+  <link rel="shortcut icon" href="imgs/cps_ico.png" type="image/x-icon" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <header class="header_bg">
+    <img class="header_bg-img cps" src="imgs/Logo_CPS_Branco_Medium.png" alt="Logo Centro Paula Souza" />
+    <img class="header_bg-img" src="imgs/Logo_SIGA_Branco_Medium.png" alt="Logo Siga" />
+  </header>
+
+  <div class="selection">
+    <div>
+      <a href="#" class="selection__btn red">
+        <span class="material-symbols-outlined">stylus</span>
+        Vestibulinho Etec</a>
+    </div>
+
+    <div>
+      <a href="#" class="selection__btn blue">
+        <span class="material-symbols-outlined">stylus</span>
+        Vestibulinho Fatec</a>
+    </div>
+
+    <div>
+      <a href="#" class="selection__btn yellow">
+        <span class="material-symbols-outlined">select_check_box</span>
+        WebSai</a>
+    </div>
+
+    <div>
+      <a href="#" class="selection__btn green">
+        <span class="material-symbols-outlined">lightbulb</span>
+        Inova</a>
+    </div>
+
+    <div>
+      <a href="#" class="selection__btn brown">
+        <span class="material-symbols-outlined">mail</span>
+        Email Institucional</a>
+    </div>
+  </div>
+
+  <div class="login">
+    <form action="siga_perfil/index.html" class="form">
+      <fieldset class="form__fieldset">
+        <div class="form__entry">
+          <label for="user" class="form__label">usuário</label>
+          <input type="text" name="user" id="user" class="form__input" required />
+        </div>
+
+        <div class="form__entry">
+          <label for="pass" class="form__label">senha</label>
+          <input type="password" name="pass" id="pass" class="form__input" required />
+        </div>
+
+        <input type="submit" value="Entrar" class="form__btn" />
+
+        <a href="#">Verifique se o seu Login já está liberado</a>
+
+        <a href="#"><img src="imgs/Ajuda.png" alt="" /></a>
+      </fieldset>
+    </form>
+  </div>
+
+  <footer>
+    <div class="top">
+      <h2>Etec - Portal Aluno</h2>
+    </div>
+
+    <div class="bottom">
+      <p>
+        Centro Paula Souza. Desenvolvido pela equipe SIGA. Todo os direitos
+        reservados
+      </p>
+    </div>
+  </footer>
+</body>
+
+</html>

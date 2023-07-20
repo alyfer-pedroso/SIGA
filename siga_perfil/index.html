@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Home ETEc</title>
+
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="belussga.js"></script>
+</head>
+
+<body>
+  <header class="header-siga">
+    <div class="cps">
+      <img src="imgs/Logo_CPS_Branco_Medium.png" alt="Logo CentroPaulaSouza Branco" />
+    </div>
+
+    <img src="imgs/Logo_SIGA_Branco_Medium.png" alt="Logo SIGA Branco" />
+  </header>
+
+  <main class="main">
+    <div class="left-corner">
+      <div class="perfil">
+        <div class="perfil__exit">
+          <p>Sair</p>
+          <a href="../index.html"><img src="imgs/bt_Sair.png" alt="Botão Sair" /></a>
+        </div>
+        <img src="imgs/PPQ3MEP5ZR4GVFY8DAIEXXB6DTQSGJ02-02-2021_11i33i44.TMB.jpg" alt="Imagem Perfil" />
+
+        <div class="perfil_text">
+          <p>alyfer leandro de araujo pedroso</p>
+        </div>
+
+        <div class="perfil_text">
+          <span>rm: </span>
+          <p>11011101011</p>
+        </div>
+
+        <div class="perfil_text">
+          <span>ra: </span>
+          <p>011101110101-0/sp</p>
+        </div>
+
+        <label for="curso">Curso:
+          <select name="curso" id="curso">
+            <option value="">(Nenhum)</option>
+            <option value="ETIM-ADM">ETIM-Administração-Em Curso</option>
+          </select>
+        </label>
+      </div>
+
+      <div class="menu">
+        <details class="menu_details">
+          <summary>
+            <img src="imgs/folder.gif" /> Menu
+          </summary>
+          <p class="summary_btn"
+            onclick="showHide('home', 'email', 'vidaAcad','boletim','fichaInd', 'fichaDes', 'progress', 'cursoHRS', 'solictDOC', 'aprovEstuds', 'rematricula', 'atualizacaoCadastro', 'reconsideracao', 'reclassificacao', 'comprovanteVacina')">
+            <img src="imgs/page.gif" />
+            Home
+          </p>
+
+          <details class="space">
+            <summary>
+              <img src="imgs/folder.gif" /> Consultas
+            </summary>
+            <p class="summary_btn"
+              onclick="showHide('vidaAcad', 'home', 'email','boletim','fichaInd', 'fichaDes', 'progress', 'cursoHRS', 'solictDOC', 'aprovEstuds', 'rematricula', 'atualizacaoCadastro', 'reconsideracao', 'reclassificacao', 'comprovanteVacina')">
+              <img src="imgs/page.gif" />
+              &nbsp;Vida Acadêmica
+            </p>
+
+            <p class="summary_btn"
+              onclick="showHide('boletim', 'home', 'email', 'vidaAcad', 'fichaInd', 'fichaDes', 'progress', 'cursoHRS', 'solictDOC', 'aprovEstuds', 'rematricula', 'atualizacaoCadastro', 'reconsideracao', 'reclassificacao', 'comprovanteVacina')">
+              <img src="imgs/page.gif" /> &nbsp;Boletim Escolar
+            </p>
+
+            <p class="summary_btn"
+              onclick="showHide('fichaInd','vidaAcad', 'home', 'email','boletim', 'fichaDes', 'progress', 'cursoHRS', 'solictDOC', 'aprovEstuds', 'rematricula', 'atualizacaoCadastro', 'reconsideracao', 'reclassificacao', 'comprovanteVacina')">
+              <img src="imgs/page.gif" /> &nbsp;Ficha Ind. Acomp. D. Escolar
+            </p>
+
+            <p class="summary_btn"
+              onclick="showHide('fichaDes', 'boletim', 'home', 'email', 'vidaAcad', 'fichaInd', 'progress', 'cursoHRS', 'solictDOC', 'aprovEstuds', 'rematricula', 'atualizacaoCadastro', 'reconsideracao', 'reclassificacao', 'comprovanteVacina')">
+              <img src="imgs/page.gif" /> &nbsp;Ficha Desempenho
+            </p>
+
+            <p class="summary_btn"
+              onclick="showHide('progress', 'boletim', 'home', 'email', 'vidaAcad', 'fichaInd', 'fichaDes', 'cursoHRS', 'solictDOC', 'aprovEstuds', 'rematricula', 'atualizacaoCadastro', 'reconsideracao', 'reclassificacao', 'comprovanteVacina')">
+              <img src="imgs/page.gif" /> &nbsp;Prog. Parcial
+            </p>
+
+            <p class="summary_btn"
+              onclick="showHide('cursoHRS', 'fichaDes', 'boletim', 'home', 'email', 'vidaAcad', 'fichaInd', 'progress', 'solictDOC', 'aprovEstuds', 'rematricula', 'atualizacaoCadastro', 'reconsideracao', 'reclassificacao', 'comprovanteVacina')">
+              <img src="imgs/page.gif" /> &nbsp;Horário dos Cursos
+            </p>
+          </details>
+
+          <details class="space">
+            <summary>
+              <img src="imgs/folder.gif" /> Solicitação
+            </summary>
+            <p class="summary_btn"
+              onclick="showHide('solictDOC','email', 'home', 'vidaAcad','boletim', 'fichaInd', 'fichaDes', 'progress', 'cursoHRS', 'aprovEstuds', 'rematricula', 'atualizacaoCadastro', 'reconsideracao', 'reclassificacao', 'comprovanteVacina')">
+              <img src="imgs/page.gif" /> &nbsp;Solicitação de Documentos
+            </p>
+
+            <p class="summary_btn"
+              onclick="showHide('aprovEstuds', 'cursoHRS', 'fichaDes', 'boletim', 'home', 'email', 'vidaAcad', 'fichaInd', 'progress', 'solictDOC', 'rematricula', 'atualizacaoCadastro', 'reconsideracao', 'reclassificacao', 'comprovanteVacina')">
+              <img src="imgs/page.gif" /> &nbsp;Aproveitamento de Estudos
+            </p>
+
+            <p class="summary_btn"
+              onclick="showHide('email', 'home', 'vidaAcad','boletim', 'fichaInd', 'fichaDes', 'progress', 'cursoHRS', 'solictDOC', 'aprovEstuds', 'rematricula', 'atualizacaoCadastro', 'reconsideracao', 'reclassificacao', 'comprovanteVacina')">
+              <img src="imgs/page.gif" />
+              &nbsp;Email
+              Institucional
+            </p>
+
+            <p class="summary_btn"
+              onclick="showHide('rematricula', 'vidaAcad', 'home', 'email','boletim','fichaInd', 'fichaDes', 'progress', 'cursoHRS', 'solictDOC', 'aprovEstuds', 'atualizacaoCadastro', 'reconsideracao', 'reclassificacao', 'comprovanteVacina')">
+              <img src="imgs/page.gif" /> &nbsp;Rematrícula
+            </p>
+
+            <p class="summary_btn"
+              onclick="showHide('comprovanteVacina', 'atualizacaoCadastro', 'rematricula', 'vidaAcad', 'home', 'email','boletim','fichaInd', 'fichaDes', 'progress', 'cursoHRS', 'solictDOC', 'aprovEstuds', 'reconsideracao', 'reclassificacao')">
+              <img src="imgs/page.gif" /> &nbsp;Comprovante de Vacinação
+            </p>
+
+            <p class="summary_btn"
+              onclick="showHide('reconsideracao', 'atualizacaoCadastro', 'rematricula', 'vidaAcad', 'home', 'email','boletim','fichaInd', 'fichaDes', 'progress', 'cursoHRS', 'solictDOC', 'aprovEstuds', 'reclassificacao', 'comprovanteVacina')">
+              <img src="imgs/page.gif" /> &nbsp;Reconsideração
+            </p>
+
+            <p class="summary_btn"
+              onclick="showHide('reclassificacao', 'reconsideracao', 'atualizacaoCadastro', 'rematricula', 'vidaAcad', 'home', 'email','boletim','fichaInd', 'fichaDes', 'progress', 'cursoHRS', 'solictDOC', 'aprovEstuds', 'comprovanteVacina')">
+              <img src="imgs/page.gif" /> &nbsp;Reclassificação
+            </p>
+
+            <p class="summary_btn"
+              onclick="showHide('atualizacaoCadastro', 'rematricula', 'vidaAcad', 'home', 'email','boletim','fichaInd', 'fichaDes', 'progress', 'cursoHRS', 'solictDOC', 'aprovEstuds', 'reconsideracao', 'reclassificacao', 'comprovanteVacina')">
+              <img src="imgs/page.gif" /> &nbsp;Atualização
+              Cadastral
+            </p>
+          </details>
+        </details>
+      </div>
+    </div>
+
+    <div class="main-container">
+      <div class="home" id="home">
+        <h2>mural</h2>
+        <p>em breve novas publicações...</p>
+      </div>
+
+      <div class="vidaAcad" id="vidaAcad">
+        <h2>vida acadêmica</h2>
+        <img src="imgs/Grade.png" alt="" id="matriz" onclick="vidaAcademica()">
+
+        <div class="dados-container" id="dados-gerais">
+          <iframe src="https://siga.cps.sp.gov.br/etec/ALU_Historico.aspx?121221;  1450;      248;  4088#"
+            name="Embpage1" width="1000" height="400" frameborder="0" align="center" title="" scrolling="auto"
+            style="width: 1000px; height: 400px;"></iframe>
+        </div>
+
+        <div id="dados-filtro">
+          <div class="filtro" style="width: 907.2px;">
+            <h3 style="margin-bottom: .3rem;">filtro</h3>
+            <table>
+              <tr>
+                <td>Tipo Curso</td>
+                <td><b>Médio</b></td>
+                <td></td>
+                <td>Unidade</td>
+                <td><b>248-ETEC de Cerquilho</b></td>
+              </tr>
+              <tr>
+                <td>Curso</td>
+                <td><b>ETIM-Administração</b></td>
+                <td></td>
+                <td>Matriz</td>
+                <td><b>ETIM_ADM_201- 1450 -Atual</b></td>
+                <td><button class="btn" onclick="acionarDadosFiltrados()">Buscar</button></td>
+              </tr>
+            </table>
+          </div>
+
+          <img src="imgs/dados-filtrado.png" alt="" id="dados-filtrados">
+        </div>
+        <p>
+          ** nao possui validade como histórico escolar, ** valores temporárrios e sujeitos a alteração sem aviso prévio
+        </p>
+      </div>
+
+      <div class="boletim" id="boletim" onmouseover="boletim()">
+        <h2>boletim escolar</h2>
+
+        <div class=" boletim-container">
+          <div class="filtro">
+            <h3>filtro</h3>
+            <div class="periodo">
+              <label for="periodo">Periodo Oferecimento &nbsp;
+                <select name="periodo" id="periodo" class="optn">
+                  <option value="">(Nenhum)</option>
+                  <option value="2-2021">2° semestre/2021</option>
+                  <option value="2-2022">2° semestre/2022</option>
+                  <option value="1-2023">1° semestre/2023</option>
+                </select>
+                <span></span>Curso &nbsp;<b>Técnico em Administração Integrado ao Ensino Médio</b>
+              </label>
+            </div>
+
+            <label for="classe" class="classLab">Classe
+              <select name="classe" id="classe" class="optn">
+                <option value="">(Nenhum)</option>
+                <option id="valueETIM" value="ETIM_1" style="display: none;">ETIM_Adm_211I - 1</option>
+                <option id="valueETIM2" value="ETIM_2" style="display: none;">ETIM_Adm_211I - 2</option>
+                <option id="valueETIM3" value="ETIM_3" style="display: none;">ETIM_Adm_211I - 3</option>
+              </select>
+            </label>
+
+            <div id="sala">
+              <p>Sala: <b>A</b> - Turno: <b>Integral</b> - Alocação: <b>Sede</b></p>
+            </div>
+
+            <button id="Buscar">Buscar</button>
+          </div>
+
+          <div id="frame" style="display: none;">
+            <p>cursa o módulo/série pela: &nbsp;<b>1ªvez</b></p>
+            <table id="table1">
+              <thead>
+                <tr>
+                  <td colspan="2" class="td-titulo">assiduidade parcial</td>
+                  <td></td>
+                  <td class="td-titulo">assiduidade final</td>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td class="td-subtitulo">aulas dadas</td>
+                  <td class="td-p">1495,00</td>
+                  <td></td>
+                  <td class="td-subtitulo">limite de faltas</td>
+                  <td class="td-p">373,75</td>
+                </tr>
+
+                <tr>
+                  <td class="td-subtitulo">total faltas</td>
+                  <td class="td-p">113,00</td>
+                  <td></td>
+                  <td class="td-subtitulo">% freq.</td>
+                  <td class="td-p">92,44</td>
+                </tr>
+              </tbody>
+            </table>
+            <p>resultado final do módulo/série: <b>promovido</b></p>
+
+            <div id="frame-boletim">
+              <img src="imgs/boletim1.png" alt="boletim1">
+            </div>
+
+            <div class="frame-legenda">
+              <h3>outras observações</h3>
+              <div class="frame-legenda_container">
+                <h3>legenda</h3>
+                <ul>
+                  <li class="legenda_li">
+                    <p><b>AE</b>Aproveitamento de Estudos</p>
+                  </li>
+                  <li class="legenda_li">
+                    <p><b>D</b>Desistência</p>
+                  </li>
+                  <li class="legenda_li">
+                    <p><b>TE</b>Transferência Expedida</p>
+                  </li>
+                  <li class="legenda_li">
+                    <p><b>TR</b>Transferência Recebida</p>
+                  </li>
+                  <li class="legenda_li">
+                    <p><b>TM</b>Trancamento de Matrícula</p>
+                  </li>
+                  <li class="legenda_li">
+                    <p><b>P</b>Promovido</p>
+                  </li>
+                  <li class="legenda_li">
+                    <p><b>RT</b>Retido</p>
+                  </li>
+                  <li class="legenda_li">
+                    <p><b>PP</b>Prom. com Prog. Parcial</p>
+                  </li>
+                  <li class="legenda_li">
+                    <p><b>EC</b>Em Curso</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div id="frame2" style="display: none;">
+            <p>cursa o módulo/série pela: &nbsp;<b>1ªvez</b></p>
+            <table id="table1">
+              <thead>
+                <tr>
+                  <td colspan="2" class="td-titulo">assiduidade parcial</td>
+                  <td></td>
+                  <td class="td-titulo">assiduidade final</td>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td class="td-subtitulo">aulas dadas</td>
+                  <td class="td-p">1495,00</td>
+                  <td></td>
+                  <td class="td-subtitulo">limite de faltas</td>
+                  <td class="td-p">373,75</td>
+                </tr>
+
+                <tr>
+                  <td class="td-subtitulo">total faltas</td>
+                  <td class="td-p">113,00</td>
+                  <td></td>
+                  <td class="td-subtitulo">% freq.</td>
+                  <td class="td-p">92,44</td>
+                </tr>
+              </tbody>
+            </table>
+            <p>resultado final do módulo/série: <b>promovido</b></p>
+
+            <div id="frame-boletim">
+              <img src="imgs/boletim2.png" alt="boletim2">
+            </div>
+
+            <div class="frame-legenda">
+              <h3>outras observações</h3>
+              <div class="frame-legenda_container">
+                <h3>legenda</h3>
+                <ul>
+                  <li class="legenda_li">
+                    <p><b>AE</b>Aproveitamento de Estudos</p>
+                  </li>
+                  <li class="legenda_li">
+                    <p><b>D</b>Desistência</p>
+                  </li>
+                  <li class="legenda_li">
+                    <p><b>TE</b>Transferência Expedida</p>
+                  </li>
+                  <li class="legenda_li">
+                    <p><b>TR</b>Transferência Recebida</p>
+                  </li>
+                  <li class="legenda_li">
+                    <p><b>TM</b>Trancamento de Matrícula</p>
+                  </li>
+                  <li class="legenda_li">
+                    <p><b>P</b>Promovido</p>
+                  </li>
+                  <li class="legenda_li">
+                    <p><b>RT</b>Retido</p>
+                  </li>
+                  <li class="legenda_li">
+                    <p><b>PP</b>Prom. com Prog. Parcial</p>
+                  </li>
+                  <li class="legenda_li">
+                    <p><b>EC</b>Em Curso</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div id="frame3" style="display: none;">
+            <p>cursa o módulo/série pela: &nbsp;<b>1ªvez</b></p>
+            <table id="table1">
+              <thead>
+                <tr>
+                  <td colspan="2" class="td-titulo">assiduidade parcial</td>
+                  <td></td>
+                  <td class="td-titulo">assiduidade final</td>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td class="td-subtitulo">aulas dadas</td>
+                  <td class="td-p">1495,00</td>
+                  <td></td>
+                  <td class="td-subtitulo">limite de faltas</td>
+                  <td class="td-p">373,75</td>
+                </tr>
+
+                <tr>
+                  <td class="td-subtitulo">total faltas</td>
+                  <td class="td-p">113,00</td>
+                  <td></td>
+                  <td class="td-subtitulo">% freq.</td>
+                  <td class="td-p">92,44</td>
+                </tr>
+              </tbody>
+            </table>
+            <p>resultado final do módulo/série: <b>promovido</b></p>
+
+            <div id="frame-boletim">
+              <img src="imgs/boletim3.png" alt="boletim3">
+            </div>
+
+            <div class="frame-legenda">
+              <h3>outras observações</h3>
+              <div class="frame-legenda_container">
+                <h3>legenda</h3>
+                <ul>
+                  <li class="legenda_li">
+                    <p><b>AE</b>Aproveitamento de Estudos</p>
+                  </li>
+                  <li class="legenda_li">
+                    <p><b>D</b>Desistência</p>
+                  </li>
+                  <li class="legenda_li">
+                    <p><b>TE</b>Transferência Expedida</p>
+                  </li>
+                  <li class="legenda_li">
+                    <p><b>TR</b>Transferência Recebida</p>
+                  </li>
+                  <li class="legenda_li">
+                    <p><b>TM</b>Trancamento de Matrícula</p>
+                  </li>
+                  <li class="legenda_li">
+                    <p><b>P</b>Promovido</p>
+                  </li>
+                  <li class="legenda_li">
+                    <p><b>RT</b>Retido</p>
+                  </li>
+                  <li class="legenda_li">
+                    <p><b>PP</b>Prom. com Prog. Parcial</p>
+                  </li>
+                  <li class="legenda_li">
+                    <p><b>EC</b>Em Curso</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div id="fichaInd">
+        <h2>Ficha Individual de Acompanhamento do Desempenho Escolar</h2>
+        <iframe src="https://siga.cps.sp.gov.br/etec/ALU_FIADE.aspx?453829;6;4088;#" name="Embpage1" width="100%"
+          height="500px" frameborder="0" align="center" title="" scrolling="auto"></iframe>
+      </div>
+
+      <div id="fichaDes">
+        <h2>Ficha de Desempenho</h2>
+        <div class="filtro" style="border: 1px solid #1C9BB5;">
+          <h3 style="font-weight: bold;">filtro</h3>
+          <label for="mencao">Tipo
+            <select name="tipo" id="mencao" class="optn" style="margin-left: 7rem;">
+              <option value="">(Nenhum)</option>
+              <option value="MEN-1">Menção Intermediário-1</option>
+              <option value="MEN-2">Menção Intermediário-2</option>
+            </select>
+          </label>
+          <button onclick="fichaDesempenho()">Filtrar</button>
+        </div>
+
+        <div class="mencao-container" id="mencao-container" style="display: none;">
+          <img src="imgs/fichaDes-1.png" alt="" id="mencao1" style="display: none;">
+          <img src="imgs/fichaDes-2.png" alt="" id="mencao2" style="display: none;">
+        </div>
+      </div>
+
+      <div id="progress">
+        <h2>progressão parcial</h2>
+        <div class="progress-container">
+          <div class="progress-legend">
+            <h3>legenda</h3>
+            <ul>
+              <li><img src="imgs/red.png">Falta professor criar Atividade de Progressão Parcial</li>
+              <li><img src="imgs/orange.png">Falta concluir Atividade de Progressão Parcial</li>
+              <li><img src="imgs/green.png">Atividade de Progressão Parcial concluída</li>
+              <li><img src="imgs/Detalhes.png">Abrir Atividades da Progressão Parcial</li>
+              <li><img src="imgs/negativo.png">Dar ciência na menção (após a finalização)</li>
+            </ul>
+          </div>
+          <table>
+            <thead>
+              <tr>
+                <td>C.Curric.</td>
+                <td>M/S</td>
+                <td>Turno</td>
+                <td>PP de</td>
+                <td>Protocolo</td>
+                <td>Expediente</td>
+                <td>Docente Responsável</td>
+                <td></td>
+                <td>Menção Obtida</td>
+                <td></td>
+                <td></td>
+              </tr>
+            </thead>
+          </table>
+        </div>
+      </div>
+
+      <div id="cursoHRS">
+        <h2>horário do curso</h2>
+        <div class="curso-container">
+          <div class="dados">
+            <h3>dados</h3>
+            <p>Período Oferec. <span></span> <b>20231</b></p>
+            <p>Sala: <b>A</b> - Turno: <b>Integral</b> - Alocação: <b>Sede</b></p>
+            <img src="imgs/Grade.png" alt="" id="cursosBTN" onclick="trocarHorario()">
+          </div>
+          <p>Vigente de: 29/05/23 até 20/12/23</p>
+          <img src="imgs/horarioNormal.png" alt="" id="cursosFrame">
+        </div>
+      </div>
+
+      <div id="solictDOC" onmouseover="acionarSolicitacoes()">
+        <h2>Solicitação de Documentos</h2>
+        <table>
+          <tr>
+            <td class="td-ti">filtro</td>
+          </tr>
+          <tr>
+            <td><b>Solicitação</b></td>
+            <td style="font-weight: bold;">03/07/23</td>
+          </tr>
+          <tr>
+            <td><b>Módulo/Série</b></td>
+            <td>3ª Série</td>
+            <td style="width: 34px;"><b>Classe</b></td>
+            <td style="padding-right: 90px;">Classe</td>
+          </tr>
+          <tr>
+            <td><b>Tipo Doc.</b></td>
+            <td>
+              <select name="tipodoc" id="tipodoc" class="optn" style="width: 120px;">
+                <option value="">(Nenhum)</option>
+                <option value="certificado">Certificado</option>
+                <option value="declaracao">Declaração</option>
+                <option value="dispensa">Dispensa</option>
+              </select>
+            </td>
+            <td style="width: 34px;"><b>Documento</b></td>
+            <td style="padding-right: 90px;">
+              <select name="document" id="document" class="optn" style="width: 200px;">
+                <option value="0" class="me">(Nenhum)</option>
+                <option value="1" class="me">Certificado Modular</option>
+                <option value="2" class="me">Dec. de Matrícula</option>
+                <option value="3" class="me">Dec. de Matrícula com Freq.</option>
+                <option value="4" class="me">Dec. de Frequência</option>
+                <option value="5" class="me">Dec. de Conclusão</option>
+                <option value="6" class="me">Guarda Religiosa</option>
+                <option value="7" class="me">Enfermo</option>
+                <option value="8" class="me">Gestante</option>
+                <option value="9" class="me">Serv. Militar</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td id="teste">
+              <div class="obs-container">
+                <b>Observações</b>
+                <textarea name="obs" id="obs" cols="30" rows="10"></textarea>
+              </div>
+            </td>
+          </tr>
+        </table>
+
+        <button class="btn" id="Solicitar" onclick="solicitar()">Solicitar</button>
+        <button class="btn" id="verSolicitar">Ver Solicitações</button>
+
+        <div id="frameSolicitacoes">
+          <iframe
+            src="https://siga.cps.sp.gov.br/etec/ALU_AcompanhaSolicitacaoDocumentos.aspx?121221;ALYFER LEANDRO DE ARAUJO PEDROSO;  1450#"
+            name="Embpage1" width="900" height="400" frameborder="2" align="center" title="" scrolling="auto"
+            style="width: 900px; height: 400px;"></iframe>
+        </div>
+      </div>
+
+      <div id="aprovEstuds">
+        <h2>Aproveitamento de Estudos</h2>
+        <p>• &nbsp; Por ser menor de idade, somente seu responsável poderá realizar a solicitação do aprov. de estudo.
+        </p>
+        <p>• &nbsp; Qualquer dúvida, entrar em contato com a Secretaria Acadêmica da sua unidade.</p>
+        <table>
+          <thead>
+            <tr>
+              <td>dados</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><b>Solicitação</b></td>
+              <td style="font-weight: bold;">04/07/23</td>
+            </tr>
+            <tr>
+              <td><b>Módulo/Série</b></td>
+              <td>3ª Série</td>
+              <td></td>
+              <td style="width: 35px;"><b>Classe</b></td>
+              <td>A</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <button class="btn" style="font-weight: bold; margin-left: -.4rem; font-size: 12px;">Acompanhar</button>
+      </div>
+
+      <div class="email" id="email">
+        <h2>Email Institucional</h2>
+
+        <div class="email-container">
+          <div class="emailInst">
+            <h3>Email Institucional</h3>
+            <p>alyfer.pedroso@etec.sp.gov.br</p>
+          </div>
+
+          <div class="emailPart">
+            <div>
+              <h2>email particular</h2>
+              <h3>Registrado na Microsoft</h3>
+              <p>alyferleandroap178@gmail.com</p>
+            </div>
+            <div>
+              <h2>&nbsp;</h2>
+              <h3>Registrado na SIGA</h3>
+              <p>alyferleandroap178@gmail.com</p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h2 class="email-warning">Solicitar senha temporária<span>Esta solicitação será enviado no seu email
+              particular registrado noSIGA</span></h2>
+          <button class="btn">Solic. Senha por email</button>
+        </div>
+      </div>
+
+      <div id="rematricula">
+        <h2>rematrícula</h2>
+        <iframe src="https://siga.cps.sp.gov.br/etec/ALU_Rematricula_WW.aspx?453829;   248#" name="Embpage1"
+          width="1000px" height="600px" frameborder="0" align="center" title="" scrolling="auto"></iframe>
+      </div>
+
+      <div id="comprovanteVacina" onmouseover="atestadoVacina()">
+        <h2>comprovante de vacinação</h2>
+        <div class="vacinaContainer">
+          <div class="vacina_alert-info"></div>
+          <p class="vacina-p" style="align-self: center; margin-bottom: 20px;">
+            Carteira de Vacinação (somente para menores de 18 anos)
+          </p>
+
+          <input type="file" name="vacinaIMG" id="vacinaIMG" style="width: 250px; color: #858585;">
+          <button class="btn vacbtn"><img src="imgs/btnLEnter.png" alt="">
+            <p>Salvar Carteira de Vacinação</p>
+          </button>
+
+          <p class="vacina-p" style="margin-bottom: 20px;">Possui atestado médico que impede de tomar a vacina covid?
+            &nbsp; &nbsp; &nbsp;
+            <input type="radio" name="yesornot" id="sim" value="s"> <label for="sim">Sim</label>
+            <input type="radio" name="yesornot" id="nao" value="n"> <label for="nao">Não</label>
+          </p>
+
+          <div id="vacinaContent1">
+            <p class="vacina-p" style="align-self: center; margin-bottom: 5px;">Comprovante de Vacinação Covid</p>
+            <p class="vacina-p" style="font-weight: normal; font-size: 10px;">Caso o comprovante da primera e da segunda
+              dose estejam no mesmo arquivo, poderá anexar o msmo documento nas duas situações.
+            </p>
+
+            <table>
+              <tr>
+                <td><b>Tipo da Vacina</b></td>
+                <td><b>Nome do Fabricante</b></td>
+                <td><b>Data da Aplicação</b></td>
+              </tr>
+              <tr>
+                <td>
+                  <select name="tipoVac" id="tipoVac" class="optn" style="width: 150px;">
+                    <option value="">(Nenhum)</option>
+                    <option value="1">Dose Única</option>
+                    <option value="2">1° Dose</option>
+                  </select>
+                </td>
+                <td>
+                  <select name="fabriVac" id="fabriVac" class="optn" style="width: 200px;">
+                    <option value="" class="me">(Nenhum)</option>
+                    <option value="1" class="me">Janssen</option>
+                    <option value="2" class="me">CoronaVac</option>
+                    <option value="3" class="me">Astrazeneca</option>
+                    <option value="4" class="me">Pfizer</option>
+                    <option value="5" class="me">Janssen</option>
+                  </select>
+                </td>
+                <td>
+                  <input type="date" name="dataVac" id="dataVac" class="optn" style="width: 85.6px;">
+                </td>
+              </tr>
+            </table>
+          </div>
+
+          <div id="vacinaContent2">
+            <p class="vacina-p" style="align-self: center;">Atestado Médico contra Vacinação</p>
+          </div>
+
+          <input type="file" name="vacinaIMG" id="vacinaIMG" style="width: 250px; color: #858585;">
+          <button class="btn vacbtn" style="width: 90px;"><img src="imgs/btnLEnter.png" alt="">
+            <p>Salvar Dose</p>
+          </button>
+        </div>
+      </div>
+
+      <div id="reconsideracao" onmouseover="reconsideracao()">
+        <h2 style="text-transform: none;">Solicitação da Reconsideração</h2>
+        <table>
+          <thead>
+            <tr>
+              <td>filtro</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <div class="reconContainer">
+                  <p>Período</p>
+                  <select name="recoPeri" id="recoPeri">
+                    <option value="">(Nenhum)</option>
+                    <option value="1">1° semestre 2023</option>
+                    <option value="2">2° semestre 2022</option>
+                  </select>
+                  <p>Tipo</p>
+                  <select name="recoTipo" id="recoTipo">
+                    <option value="" class="me">(Nenhum)</option>
+                    <option value="1" class="me">Menção Intermediário-1</option>
+                    <option value="2" class="me">Menção Intermediário-2</option>
+                    <option value="3" class="me">Menção Intermediário-3</option>
+                    <option value="4" class="me">Menção Final</option>
+                  </select>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <button class="btn"
+          style="font-family: Verdana; font-size: 13px; font-weight: bold; margin-left: -.4rem;">Acompanhar</button>
+      </div>
+
+      <div id="reclassificacao">
+        <h2 style="text-transform: none;">Solicitação da Reclassificação</h2>
+        <table>
+          <thead>
+            <tr>
+              <td>filtro</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <div class="reconContainer">
+                  <p>Período</p>
+                  <select name="recoPeri" id="recoPeri">
+                    <option value="">(Nenhum)</option>
+                    <option value="1">1° semestre 2023</option>
+                    <option value="2">2° semestre 2022</option>
+                    <option value="3">1° semestre 2022</option>
+                  </select>
+                  </select>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <button class="btn"
+          style="font-family: Verdana; font-size: 13px; font-weight: bold; margin-left: -.4rem;">Acompanhar</button>
+      </div>
+
+      <div id="atualizacaoCadastro">
+        <h2>atualizar dados pessoais</h2>
+        <iframe src="https://siga.cps.sp.gov.br/etec/ALU_Rematricula_WW.aspx?453829;   248#" name="Embpage1"
+          width="1000px" height="600px" frameborder="0" align="center" title="" scrolling="auto"></iframe>
+      </div>
+
+    </div>
+  </main>
+
+  <footer></footer>
+</body>
+
+</html>
